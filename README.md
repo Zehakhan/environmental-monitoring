@@ -12,4 +12,4 @@ This project aims to develop a smart environmental monitoring system that collec
 ## Setup Instructions
 1. **Clone the repository**: 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Zehakhan/environmental-monitoring.git
