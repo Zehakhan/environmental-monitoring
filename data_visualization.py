@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def visualize_data():
     # Example data
-    data = pd.read_csv('environmental_data.csv')
+    data = pd.read_csv('environmental_data.csv', names=['timestamp', 'temperature', 'humidity', 'air_quality'])
     
     # Plot data
     plt.figure(figsize=(10, 6))
@@ -16,6 +16,3 @@ def visualize_data():
     plt.title('Environmental Data')
     plt.legend()
     plt.show()
-
-if __name__ == "__main__":
-    visualize_data()
