@@ -1,9 +1,7 @@
 def process_data(data):
-    # Example processing: Convert to a dictionary
-    processed_data = {
-        'timestamp': data[0],
-        'temperature': data[1],
-        'humidity': data[2],
-        'air_quality': data[3]
-    }
-    return processed_data
+    return data * 1.8 + 32  # Convert Celsius to Fahrenheit
+
+# Example test
+celsius = 25.0
+fahrenheit = process_data(celsius)
+print(f"Celsius: {celsius}, Fahrenheit: {fahrenheit}")

@@ -1,13 +1,10 @@
 import random
 import time
 
-def simulate_sensor_data():
+def generate_sensor_data():
     while True:
-        data = [
-            time.time(),
-            random.uniform(20.0, 30.0),  # temperature
-            random.uniform(30.0, 60.0),  # humidity
-            random.uniform(0.0, 100.0)   # air quality
-        ]
-        yield data
-        time.sleep(1)  # simulate data every second
+        temperature = round(random.uniform(20.0, 30.0), 2)
+        print(f"Temperature: {temperature}°C")
+        time.sleep(1)
+
+generate_sensor_data()
